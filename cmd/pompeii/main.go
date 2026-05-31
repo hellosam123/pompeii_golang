@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/handlers"
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/middleware"
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/models"
+	"github.com/hellosam123/pompeii_golang/internal/handlers"
+	"github.com/hellosam123/pompeii_golang/internal/middleware"
+	"github.com/hellosam123/pompeii_golang/internal/models"
 )
 
 func main() {

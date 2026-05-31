@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/models"
+	"github.com/hellosam123/pompeii_golang/internal/models"
 
 	_ "modernc.org/sqlite"
 )

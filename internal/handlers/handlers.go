@@ -10,9 +10,9 @@ import (
 
 	"github.com/gorilla/sessions"
 
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/helpers"
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/models"
-	"github.com/hellosam123/project_webapp_pompeii_go/internal/templates"
+	"github.com/hellosam123/pompeii_golang/internal/helpers"
+	"github.com/hellosam123/pompeii_golang/internal/models"
+	"github.com/hellosam123/pompeii_golang/internal/templates"
 )
 
 var (

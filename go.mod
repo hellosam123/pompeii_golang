@@ -1,4 +1,4 @@
-module github.com/hellosam123/project_webapp_pompeii_go
+module github.com/hellosam123/pompeii_golang
 
 go 1.26.3
 
