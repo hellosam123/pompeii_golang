@@ -14,8 +14,8 @@
 		<div id="vocab-list-select">
 			<label for="vocab-list-form">Vocab List:</label>
 			<select id="vocab-list-form" name="vocab-list" onchange="tableSearch()">
-				<option value="IGCSE">IGCSE</option>
-				<option value="GCSE DVL">GCSE DVL</option>
+				<option value="Latin IGCSE">Latin IGCSE</option>
+				<option value="Latin GCSE DVL">Latin GCSE DVL</option>
 			</select>
 		</div>
 
@@ -44,6 +44,9 @@
 	</div>
 </div>
 
-<script src="../static/js/table_search.js"></script>
+<script type="module">
+	import { tableSearch } from "../static/js/table_search.js";
+	window.tableSearch = tableSearch;
+</script>
 
 {{end}}

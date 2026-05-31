@@ -150,24 +150,14 @@ func ClassicGameModeHandler(w http.ResponseWriter, r *http.Request) {
 
 func NormalGameModeHandler(w http.ResponseWriter, r *http.Request) {
 	gameSession, _ := store.Get(r, "game-session")
-	vocabGroup, ok := gameSession.Values["vocabGroup"].(string)
-	if !ok {
-		log.Printf("failed to get vocabGroup value from gameSession")
-		return
-	}
 	difficultyMode, ok := gameSession.Values["difficultyMode"].(string)
 	if !ok {
 		log.Printf("failed to get difficultyMode value from gameSession")
 		return
 	}
 
-	if vocabGroup != "" && difficultyMode != "" {
-		data := models.GameData{
-			VocabGroup:     vocabGroup,
-			DifficultyMode: difficultyMode,
-		}
-
-		renderTemplate(w, "game.html", data)
+	if difficultyMode != "" {
+		renderTemplate(w, "game.html", map[string]string{"DifficultyMode": difficultyMode})
 	} else {
 		http.Redirect(w, r, "/pompeii/", http.StatusFound)
 	}

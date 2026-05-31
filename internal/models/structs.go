@@ -17,11 +17,6 @@ type AnsweredVocabID struct {
 	Correct bool
 }
 
-type GameData struct {
-	VocabGroup     string
-	DifficultyMode string
-}
-
 type GameOverData struct {
 	AnsweredVocabData []AnsweredVocab
 	Score             string

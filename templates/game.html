@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="../static/css/game.css" />
 
 <div id="difficulty-mode-info" data-difficulty_mode="{{ .DifficultyMode }}"></div>
-<div id="vocab-group-info" data-vocab_group="{{ .VocabGroup }}"></div>
 
 <div class="buttons-container">
 	<a href="/pompeii/game_over"><button class="button1">End Game</button></a>
@@ -36,6 +35,6 @@
 	</form>
 </div>
 
-<script src="../static/js/game.js"></script>
+<script type="module" src="../static/js/game.js"></script>
 
 {{end}}
