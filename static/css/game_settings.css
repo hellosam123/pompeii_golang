@@ -1,0 +1,50 @@
+tip {
+	border-bottom: 1px dotted black;
+	cursor: pointer;
+}
+
+#game-settings-container {
+	width: 80%;
+	max-width: 800px;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#game-settings-container form > div {
+	margin-bottom: 15px;
+}
+
+#game-settings-container label {
+	display: inline-block;
+	width: 150px;
+	color: white;
+	font-family: "Cinzel", serif;
+}
+
+#game-settings-container select,
+#game-settings-container input[type="number"] {
+	padding: 8px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+#game-settings-container input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+}
+
+#game-settings-container button {
+	background: #970000;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+#game-settings-container button:hover {
+	background: #f46a00;
+}

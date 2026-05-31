@@ -1,0 +1,61 @@
+{{define "content"}}
+<link rel="stylesheet" href="../static/css/vocab_table.css" />
+<link rel="stylesheet" href="../static/css/game_over.css" />
+
+<div id="retry-incorrect-info" data-retry_incorrect="{{ .RetryIncorrect }}"></div>
+
+<div class="buttons-container">
+	<a href="/pompeii/index"><button class="button1">Go Back</button></a>
+</div>
+
+<div class="buttons-container" id="retry-incorrect-div" style="padding-top: 20px">
+	<a href="/pompeii/load_game"><button class="button2">Retry Incorrect Vocab</button></a>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="game-over">Game Over</h1>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="score">Score: {{.Score}}</h1>
+</div>
+
+<div class="flexbox-grid">
+	<div id="search-table">
+		<div id="table">
+			<table id="myTable">
+				<tr class="header">
+					<th style="width: 10%">Correct</th>
+					<th style="width: 40%">Vocabulary</th>
+					<th style="width: 50%">English Translation</th>
+				</tr>
+
+				{{range .AnsweredVocabData}}
+				<tr>
+					{{if .Correct}}
+					<td>✅</td>
+
+					{{else}}
+					<td>❌</td>
+
+					{{end}}
+
+					<td>{{.Vocab.VocabWord}}</td>
+					<td>{{.Vocab.EnglishTranslation}}</td>
+				</tr>
+				{{end}}
+			</table>
+		</div>
+	</div>
+</div>
+
+<script>
+	const retryIncorrectButtonElement = document.getElementById("retry-incorrect-div");
+	const retryIncorrectDiv = document.getElementById("retry-incorrect-info");
+	const retryIncorrect = retryIncorrectDiv.dataset.retry_incorrect;
+	if (retryIncorrect == "False") {
+		retryIncorrectButtonElement.classList.toggle("invisible");
+	}
+</script>
+
+{{end}}

@@ -1,0 +1,22 @@
+[project]
+name = "project_webapps"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ms.brown",email = "eqbrown@isf.edu.hk"}
+]
+readme = "README.md"
+requires-python = ">=3.14, <3.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+[tool.poetry.dependencies]
+flask = "^3.1.2"
+flask-wtf = "^1.2.2"
+pandas = "^3.0.2"
+nltk = "^3.9.4"
+python-dotenv = "^1.2.2"

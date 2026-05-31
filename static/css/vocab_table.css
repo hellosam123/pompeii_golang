@@ -1,0 +1,77 @@
+#search-table {
+	width: 80%;
+	max-width: 800px;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#myInput {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+#myTable {
+	width: 100%;
+	border-collapse: collapse;
+	background: white;
+}
+
+#myTable .header {
+	background: #970000;
+	color: white;
+}
+
+#myTable .header th {
+	padding: 10px;
+	text-align: left;
+}
+
+#myTable td {
+	padding: 8px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#myTable tr:hover {
+	background: #ebebeb;
+}
+
+#myTable td:first-child {
+	font-weight: bold;
+	color: #970000;
+	font-family: "Cinzel", serif;
+	font-size: 1.05rem;
+}
+
+#myTable td:last-child {
+	color: #555;
+	font-style: italic;
+}
+
+#myTable td:first-child::before {
+	content: "⚡ ";
+	color: #f46a00;
+	font-size: 0.8rem;
+}
+
+#vocab-list-select {
+	margin-bottom: 15px;
+}
+
+#vocab-list-select label {
+	width: 150px;
+	color: white;
+	font-family: "Cinzel", serif;
+}
+
+#vocab-list-select select {
+	margin-left: 20px;
+	padding: 8px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}

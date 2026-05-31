@@ -1,0 +1,33 @@
+{{define "content"}}
+<link rel="stylesheet" href="../static/css/game.css" />
+
+<div class="buttons-container">
+	<a href="/pompeii/game_over"><button class="button1">End Game</button></a>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="vocab-word"></h1>
+</div>
+
+<div class="flexbox-grid">
+	<form id="answer-form">
+		<input type="text" id="answer-input" autocomplete="off" autofocus />
+		<input type="submit" hidden />
+	</form>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="feedback"></h1>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="english-translation"></h1>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle" id="score">0 / 0</h1>
+</div>
+
+<script src="../static/js/classic.js"></script>
+
+{{end}}

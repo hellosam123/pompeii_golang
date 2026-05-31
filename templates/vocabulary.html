@@ -1,0 +1,49 @@
+{{define "content"}}
+<link rel="stylesheet" href="../static/css/vocab_table.css" />
+
+<div class="buttons-container">
+	<a href="/pompeii/index"><button class="button1">Go Back</button></a>
+</div>
+
+<div class="subtitle-wrap">
+	<h1 class="subtitle">Vocabulary List</h1>
+</div>
+
+<div class="flexbox-grid">
+	<div id="search-table">
+		<div id="vocab-list-select">
+			<label for="vocab-list-form">Vocab List:</label>
+			<select id="vocab-list-form" name="vocab-list" onchange="tableSearch()">
+				<option value="IGCSE">IGCSE</option>
+				<option value="GCSE DVL">GCSE DVL</option>
+			</select>
+		</div>
+
+		<!-- <input> is so annoying to work with -->
+		<div id="input-div">
+			<input type="text" id="myInput" onkeyup="tableSearch()" placeholder="Search for vocabulary.." />
+		</div>
+
+		<div id="table">
+			<table id="myTable">
+				<tr class="header">
+					<th style="width: 50%">Vocabulary</th>
+					<th style="width: 50%">English Translation</th>
+					<th style="display: none">Vocab Group</th>
+				</tr>
+
+				{{range .}}
+				<tr>
+					<td>{{.VocabWord}}</td>
+					<td><i>{{.EnglishTranslation}}</i></td>
+					<td style="display: none">{{.VocabGroup}}</td>
+				</tr>
+				{{end}}
+			</table>
+		</div>
+	</div>
+</div>
+
+<script src="../static/js/table_search.js"></script>
+
+{{end}}

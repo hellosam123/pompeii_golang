@@ -1,0 +1,128 @@
+body {
+	font-family: sans-serif;
+	background-image: url("/static/images/Pompeii.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	overflow: auto;
+}
+
+.title {
+	font-family: "MedievalSharp", "Cinzel", "UnifrakturMaguntia", serif;
+	font-size: 5rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+	animation: rgbChange 6s infinite;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	margin-top: 0px;
+	padding: 20px;
+}
+
+.title-wrap {
+	padding-top: 200px;
+	overflow: hidden;
+}
+
+.subtitle {
+	font-family: "MedievalSharp", "Cinzel", "UnifrakturMaguntia", serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+.subtitle-wrap {
+	padding-top: 50px;
+	overflow: hidden;
+}
+
+@keyframes rgbChange {
+	0% {
+		color: rgb(255, 255, 255);
+	}
+	20% {
+		color: rgb(255, 176, 28);
+	}
+	60% {
+		color: rgb(255, 242, 0);
+	}
+	100% {
+		color: rgb(255, 102, 0);
+	}
+}
+
+.title:hover {
+	animation-duration: 2s;
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+}
+
+.buttons-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding-top: 50px;
+}
+
+.button1,
+.button2,
+.button3 {
+	font-family: "Cinzel", serif;
+	font-size: 1.2rem;
+	padding: 12px 30px;
+	width: 200px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+
+.button1 {
+	background: rgba(151, 0, 0);
+	color: white;
+}
+
+.button1:hover {
+	background: rgba(151, 0, 0);
+	transform: scale(1.05);
+}
+
+.button2 {
+	background: rgba(244, 106, 0);
+	color: white;
+}
+
+.button2:hover {
+	background: rgba(244, 106, 0);
+	transform: scale(1.05);
+}
+
+.button3 {
+	background: rgba(255, 242, 0);
+	color: #ffffff;
+}
+
+.button3:hover {
+	background: rgba(255, 242, 0);
+	transform: scale(1.05);
+}
+
+.flexbox-grid {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+#retry-incorrect.invisible {
+	display: none;
+}

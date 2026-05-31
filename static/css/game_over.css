@@ -1,0 +1,33 @@
+#retry-incorrect-div.invisible {
+	display: none;
+}
+
+.subtitle-wrap:has(#game-over),
+.subtitle-wrap:has(#score) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#game-over,
+#score {
+	font-family: "MedievalSharp", "Cinzel", serif;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	color: #ffd700;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 30, 10, 0.9));
+	border: 3px solid #ffd700;
+	border-radius: 20px;
+	padding: 15px 30px;
+	margin: 10px auto;
+	display: inline-block;
+	width: auto;
+	min-width: 300px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	letter-spacing: 3px;
+	transition: transform 0.2s ease;
+}

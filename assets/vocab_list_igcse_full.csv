@@ -1,0 +1,698 @@
+vocab_word,Info,english_translation
+"a, ab",#NAME?,"by, from"
+absum,"abesse, afui","I am absent, I am away"
+"ac, atque",,and
+accipio,"-ere, accepi, acceptum","I receive, I accept"
+acer,"acris, acre","keen, fierce"
+ad,#NAME?,"to, towards, near"
+adeo,,"to such an extent, so much"
+adhuc,,"still, up till now"
+adiuvo,"-are, adiuvi, adiutum",I help
+adsum,"adesse, adfui","I am present, I am here"
+adulescens,"adulescentis, m. or f.","young man, young woman"
+advenio,"-ire, adveni, adventum","I reach, I arrive"
+aedifico,"-are, aedificavi, aedificatum",I build
+aeger,"aegra, aegrum","ill, sick"
+ager,"agri, m.",field
+aggredior,"aggredi, aggresus sum",I attack
+agmen,"agminis, n.",column (of men)
+ago,"-ere, egi, actum","I do, I drive, I spend (time)"
+agricola,"agricolae, m.",farmer
+alii ... alii,,some ... others
+aliquis,"aliqua, aliquid","someone, anyone"
+alius,"alia, alium","another, other"
+alter,"altera, alterum",the other (of two)
+altus,"alta, altum","high, deep"
+ambulo,"-are, ambulavi, ambulatum",I walk
+amica,"amicae, f.",friend (female)
+amicus,"amici, m.",friend (male)
+amitto,"-ere, amisi, amissum",I lose
+amo,"-are, amavi, amatum",I love
+amor,"amoris, m.",love
+an,,or
+ancilla,"ancillae, f.","slave-girl, maid"
+animus,"animi, m.","mind, heart, feeling, spirit"
+annus,"anni, m.",year
+ante,#NAME?,"before, in front of"
+antea,,previously
+appareo,"-ere, apparui, apparitum",I appear
+appropinquo,"-are, appropinquavi, appropinquatum (+ dative)",I approach
+aptus,"apta, aptum","suitable, appropriate"
+apud,#NAME?,"with, among, at the house of"
+aqua,"aquae, f.",water
+arbor,"arboris, f.",tree
+arcesso,"-ere, arcessivi, arcessitum","I summon, I call"
+arma,"armorum, n. pl.","arms, weapons"
+ars,"artis, f.","art, skill"
+ascendo,"-ere, ascendi, ascensum","I climb, I go up"
+atrox,atrocis,"harsh, terrible"
+attonitus,"attonita, attonitum",astonished
+audax,audacis,bold
+audeo,"-ere, ausus sum (semi-deponent)",I dare
+audio,"-ire, audivi, auditum","I hear, I listen"
+aufero,"auferre, abstuli, ablatum","I take away, I steal"
+aut,,or
+aut ... aut,,either ... or
+autem,,"but, however"
+auxilium,"auxilii, n.",help
+barbarus,"barbara, barbarum",barbarian
+bellum,"belli, n.",war
+bellum gero,,I wage war
+bene,,well
+benignus,"benigna, benignum",kind
+bibo,"-ere, bibi, bibitum",I drink
+bonus,"bona, bonum",good
+brevis,breve,short
+cado,"-ere, cecidi, casum",I fall
+caedo,"-ere, cecidi, caesum","I cut, I kill"
+caelum,"caeli, n.",sky
+callidus,"callida, callidum","clever, cunning"
+campus,"campi, m.",plain
+canis,"canis, m. or f.",dog
+capio,"-ere, cepi, captum","I take, I capture"
+captivus,"captivi, m.",prisoner
+caput,"capitis, n.",head
+carus,"cara, carum",dear
+castra,"castrorum, n.",camp
+casus,"casus, m.","event, accident, misfortune"
+causa,"causae, f.","cause, reason"
+cedo,"-ere, cessi, cessum","I go, I give way, I yield"
+celer,"celeris, celere","swift, fast"
+celo,"-are, celavi, celatum","I hide, I conceal"
+cena,"cenae, f.",dinner
+ceno,"-are, cenavi, cenatum",I dine
+centurio,"centurionis, m.",centurion
+certus,"certa, certum","certain, definite"
+ceteri,"ceterae, cetera",the rest (of)
+cibus,"cibi, m.",food
+circum,#NAME?,around
+civis,"civis, m. or f.",citizen
+civitas,"civitatis, f.","state, community"
+clamo,"-are, clamavi, clamatum",I shout
+clamor,"clamoris, m.",shout
+coepi,"coepisse, coeptum","I begin, I have begun"
+cogito,"-are, cogitavi, cogitatum",I think
+cognosco,"-ere, cognovi, cognitum","I get to know, I find out"
+cogo,"-ere, coegi, coactum",I compel
+colligo,"-ere, collegi, collectum",I collect
+colloquor,"colloqui, collocutus sum","I converse, I hold a conversation"
+comes,"comitis, m. or f.",companion
+comparo,"-are, comparavi, comparatum","I prepare, I gain, I obtain"
+conficio,"-ere, confeci, confectum","I finish, I wear out"
+coniunx,"coniugis, m. or f.","husband, wife"
+conor,"conari, conatus sum",I try
+consilium,"consilii, n.","plan, policy"
+consilium capio,,"I think of a plan, I have an idea"
+conspicio,"-ere, conspexi, conspectum","I catch sight of, I see"
+constituo,"-ere, constitui, constitutum",I decide
+consul,"consulis, m.",consul
+consumo,"-ere, consumpsi, consumptum","I eat, I use up"
+contendo,"-ere, contendi, contentum","I hurry, I stretch, I fight"
+contentus,"contenta, contentum","satisfied, happy, content"
+contra,#NAME?,against
+convenio,"-ire, conveni, conventum","I meet, I gather, I come together"
+copiae,"copiarum, f. pl.","forces, troops"
+corpus,"corporis, n.",body
+cotidie,,every day
+cras,,tomorrow
+credo,"-ere, credidi, creditum (+ dative)","I believe, I trust"
+crimen,"criminis, n.","charge, accusation"
+crudelis,crudele,cruel
+culpo,"-are, culpavi, culpatum","I find fault with, I blame"
+cum,#NAME?,when
+cum,#NAME?,"when, since, although"
+cum,#NAME?,with
+cupio,"-ere, cupivi, cupitum",I desire
+cur?,,why?
+cura,"curae, f.","care, concern"
+curro,"-ere, cucurri, cursum",I run
+custodio,"-ire, custodivi, custoditum",I guard
+custos,"custodis, m.",guard
+de,#NAME?,"down from, concerning"
+dea,"deae, f.",goddess
+debeo,"-ere, debui, debitum","I owe, I ought, I have to"
+decipio,"-ere, decepi, deceptum",I deceive
+dedo,"-ere, dedidi, deditum",I surrender
+defendo,"-ere, defendi, defensum",I defend
+deinde,,"then, next"
+deleo,"-ere, delevi, deletum",I destroy
+delibero,"-are, deliberavi, deliberatum","I deliberate, I consider seriously"
+descendo,"-ere, descendi, descensum",I descend
+despero,"-are, desperavi, desperatum","I give up hope, I despair"
+deus,"dei, m.",god
+dico,"-ere, dixi, dictum","I say, I tell"
+dies,"diei, m. or f.",day
+difficilis,difficile,difficult
+dignus,"digna, dignum (+ ablative)","worthy, deserving (of)"
+diligens,diligentis,"diligent, hard-working"
+diligentia,"diligentiae, f.","diligence, industry, care"
+dirus,"dira, dirum","awful, dreadful"
+discedo,"-ere, discessi, discessum","I depart, I go away"
+disciplina,"disciplinae, f.","training, education, discipline"
+disco,"-ere, didici",I learn
+diu,,for a long time
+dives,divitis,"rich, wealthy"
+do,"dare, dedi, datum",I give
+doceo,"-ere, docui, doctum",I teach
+dolor,"doloris, m.","pain, grief, sorrow"
+domina,"dominae, f.",mistress
+dominus,"domini, m.",master
+domus,"domus, f.",house
+donum,"doni, n.",gift
+dormio,"-ire, dormivi, dormitum",I sleep
+dubito,"-are, dubitavi, dubitatum","I doubt, I hesitate"
+dubius,"dubia, dubium",doubtful
+duco,"-ere, duxi, ductum",I lead
+dum,#NAME?,while
+durus,"dura, durum","hard, harsh"
+dux,"ducis, m.","leader, commander, guide"
+"e, ex",#NAME?,"out of, from"
+ecce!,,"look!, behold!"
+efficio,"-ere, effeci, effectum","I bring about, I accomplish"
+effugio,"-ere, effugi","I escape, I flee"
+ego,mei,I
+egredior,"egredi, egressus sum",I go out
+eheu!,,"oh dear!, alas!"
+emo,"-ere, emi, emptum",I buy
+enim,,for
+eo,,"to there, thither"
+eo,"ire, i(v)I, itum",I go
+epistula,"epistulae, f.",letter
+eques,"equitis, m.","cavalryman, rider; (pl. cavalry)"
+equus,"equi, m.",horse
+et,,and
+et ... et,,both ... and
+etiam,,"even, also"
+excito,"-are, excitavi, excitatum","I rouse, I stir up"
+exeo,"exire, exii, exitum",I go out
+exercitus,"exercitus, m.",army
+exspecto,"-are, exspectavi, exspectatum","I expect, I wait for"
+extra,#NAME?,"outside, beyond"
+extremus,"extrema, extremum","furthest, last"
+fabula,"fabulae, f.","story, tale"
+facilis,facile,easy
+facio,"-ere, feci, factum","I make, I do"
+fallo,"-ere, fefelli, falsum","I deceive, I trick"
+fama,"famae, f.","rumour, reputation"
+felix,felicis,"lucky, happy"
+femina,"feminae, f.",woman
+fero,"ferre, tuli, latum","I carry, I bring, I bear, I endure"
+ferox,ferocis,fierce
+fessus,"fessa, fessum",tired
+fidelis,fidele,"faithful, loyal"
+fides,"fidei, f.","faith, confidence, honesty"
+filia,"filiae, f.",daughter
+filius,"filii, m.",son
+finis,"finis, m.",end
+fio,"fieri, factus sum","I become, I am made"
+flumen,"fluminis, n.",river
+fons,"fontis, m.","spring, fountain"
+forma,"formae, f.","form, beauty, shape"
+forte,,by chance
+fortis,forte,brave
+fortuna,"fortunae, f.","fortune, chance, luck"
+forum,"fori, n.","forum, market-place"
+frango,"-ere, fregi, fractum",I break
+frater,"fratris, m.",brother
+frustra,,in vain
+fuga,"fugae, f.",flight
+fugio,"-ere, fugi, fugitum","I flee, I run away"
+gaudeo,"-ere, gavisus sum (semi-deponent)","I am happy, I rejoice"
+gaudium,"gaudii, n.",joy
+gens,"gentis, f.","tribe, nation, race"
+gero,"-ere, gessi, gestum","I do, I wear, I carry"
+gladiator,"gladiatoris, m.",gladiator
+gladius,"gladii, m.",sword
+gloria,"gloriae, f.",glory
+gratias ago,,I give thanks
+gravis,grave,"heavy, severe, important"
+habeo,"-ere, habui, habitum",I have
+habito,"-are, habitavi, habitatum","I live, I reside"
+hasta,"hastae, f.",spear
+heri,,yesterday
+hic,,here
+hic,"haec, hoc","this (he, she, it)"
+hinc,,"from here, hence"
+hodie,,today
+homo,"hominis, m.","man, person"
+hora,"horae, f.",hour
+hortor,"hortari, hortatus sum",I encourage
+hortus,"horti, m.",garden
+hostis,"hostis, m.",enemy
+huc,,"to here, hither"
+iaceo,"ere, iacui, iactum",I lie (down)
+iacio,"-ere, ieci, iactum",I throw
+iam,,"now, already"
+ianua,"ianuae, f.","door, entrance"
+ibi,,there
+idem,"eadem, idem",the same
+idoneus,"idonea, idoneum",suitable
+igitur,,therefore
+ignavus,"ignava, ignavum","lazy, cowardly"
+ignis,"ignis, m.",fire
+ille,"illa, illud","that (he, she, it)"
+illuc,,"to there, thither"
+imperator,"imperatoris, m.","emperor, commander, general"
+imperium,"imperii, n.","command, power, order"
+impero,"-are, imperavi, imperatum (+ dative)",I order
+impetus,"impetus, m.","charge, assault, attack"
+in,#NAME?,"into, onto, against"
+in,#NAME?,"in, on"
+in animo habeo,,"I have in mind, I intend"
+incendo,"-ere, incendi, incensum",I set fire to
+incipio,"-ere, incepi, inceptum",I begin
+inde,,"from there, thence"
+infelix,infelicis,unlucky
+ingens,ingentis,"huge, enormous"
+ingredior,"ingredi, ingressus sum","I enter, I go in"
+inimicus,"inimica, inimicum","hostile, unfriendly"
+"inquit, inquam",(defective),"he says, I say"
+insanus,"insana, insanum","mad, insane"
+insignis,insigne,"distinguished, remarkable"
+insula,"insulae, f.","island, block of flats"
+intellego,"-ere, intellexi, intellectum","I understand, I realise"
+inter,#NAME?,"between, among"
+interea,,meanwhile
+interficio,"-ere, interfeci, interfectum",I kill
+intra,#NAME?,"inside, within"
+intro,"-are, intravi, intratum",I enter
+invenio,"-ire, inveni, inventum","I come across, I find"
+invideo,"-ere, invidi, invisum (+ dative)","I envy, I hate"
+invito,"-are, invitavi, invitatum",I invite
+invitus,"invita, invitum","reluctant, unwilling"
+ipse,"ipsa, ipsum",self
+ira,"irae, f.",anger
+iratus,"irata, iratum",angry
+is,"ea, id","this, that, he, she, it"
+iste,"ista, istud","that one (that man, woman, thing)"
+ita,,"so, thus"
+ita vero,,"indeed, certainly"
+Italia,"Italiae, f.",Italy
+itaque,,"and so, therefore"
+iter,"itineris, n.","journey, march"
+iterum,,again
+iubeo,"-ere, iussi, iussum",I order
+iudex,"iudicis, m.","judge, juror"
+iudico,"-are, iudicavi, iudicatum",I judge
+iungo,"-ere, iunxi, iunctum",I join
+iustus,"iusta, iustum","just, right"
+iuvenis,"iuvenis, m.",young man
+labor,"laboris, m.",work
+labor,"labi, lapsus sum","I slip, I slide, I glide"
+laboro,"-are, laboravi, laboratum",I work
+lacrimo,"-are, lacrimavi, lacrimatum","I weep, I cry"
+laetus,"laeta, laetum",happy
+latus,"lata, latum","broad, wide"
+latus,"lateris, n.",side
+laudo,"-are, laudavi, laudatum",I praise
+laus,"laudis, f.","praise, glory"
+legatus,"legati, m.","envoy, senior officer"
+legio,"legionis, f.",legion
+lego,"-ere, legi, lectum",I read
+lente,,slowly
+lex,"legis, f.",law
+libenter,,"gladly, willingly"
+liber,"libera, liberum",free
+liber,"libri, m.",book
+liberi,"liberorum, m. pl.",children
+libero,"-are, liberavi, liberatum",I free
+libertus,"liberti, m.",freedman
+licet,#NAME?,although
+licet,"-ere, licuit, licitum",it is allowed
+litus,"litoris, n.",shore
+locus,"loci (pl. loca, n.)",place
+longe,,far off
+longus,"longa, longum",long
+loquor,"loqui, locutus sum",I speak
+ludo,"-ere, lusi, lusum",I play
+ludus,"ludi, m.","game, play, school"
+luna,"lunae, f.",moon
+lux,"lucis, f.",light
+magister,"magistri, m.",teacher
+magnopere,,"very much, especially"
+magnus,"magna, magnum","large, great"
+malo,"malle, malui",I prefer
+malus,"mala, malum",bad
+maneo,"-ere, mansi, mansum","I remain, I stay"
+manus,"manus, f.","hand, band (of men)"
+mare,"maris, n.",sea
+mater,"matris, f.",mother
+matrimonium,"matrimonii, n.",marriage
+medicus,"medici, m.",doctor
+medius,"media, medium","middle, the middle of"
+memini,meminisse,"I remember, I recollect"
+mens,"mentis, f.","mind, intellect, purpose"
+mensa,"mensae, f.",table
+mercator,"mercatoris, m.",merchant
+metus,"metus, m.",fear
+meus,"mea, meum",my
+miles,"militis, m.",soldier
+mirabilis,mirabile,"wonderful, amazing"
+miror,"mirari, miratus sum","I wonder at, I admire"
+miser,"misera, miserum","wretched, unfortunate"
+mitto,"-ere, misi, missum","I send, I throw, I let go"
+modo,,"just now, only"
+modus,"modi, m.","way, method, measure, end, limit"
+moneo,"-ere, monui, monitum","I advise, I warn"
+mons,"montis, m.",mountain
+morbus,"morbi, m.","disease, illness, sickness"
+morior,"mori, mortuus sum",I die
+mors,"mortis, f.",death
+mos,"moris, m.",custom
+moveo,"-ere, movi, motum",I move
+mox,,soon
+multitudo,"multitudinis, f.","crowd, a great number"
+multus,"multa, multum","much, many"
+munio,"-ire, munivi, munitum","I fortify, I protect"
+murus,"muri, m.",wall
+"nam, namque",,for
+narro,"-are, narravi, narratum","I tell, I relate"
+nascor,"nasci, natus sum",I am born
+nauta,"nautae, m.",sailor
+navigo,"-are, navigavi, navigatum",I sail
+navis,"navis, f.",ship
+ne,,"lest, in case, in order that ... not"
+-ne,,(introduces an open question)
+"nec, neque",,neither
+nec/neque ... neque,,neither ... nor
+necesse est,,it is necessary
+neglego,"-ere, neglexi, neglectum",I neglect
+nego,"-are, negavi, negatum","I deny, I say that ... not"
+nemo,"nullius, m. or f.",nobody
+nescio,"-ire, nescivi, nescitum",I do not know
+nihil,,nothing
+nisi,,"unless, except, if ... not"
+nolo,"nolle, nolui","I do not want, I am unwilling"
+nomen,"nominis, n.",name
+non modo ... sed etiam,,not only ... but also
+nondum,,not yet
+nonne?,,surely ... ?
+nonnullus,"nonnulla, nonnullum","some, several"
+nos,,"we, us"
+noster,"nostra, nostrum",our
+novus,"nova, novum",new
+nox,"noctis, f.",night
+nullus,"nulla, nullum","none, no"
+num,(used in indirect questions),"whether, if"
+num?,(used in direct questions),surely ... not?
+numquam,,never
+nunc,,now
+nuntio,"-are, nuntiavi, nuntiatum",I announce
+nuntius,"nuntii, m.","messenger, message"
+nuper,,recently
+ob,#NAME?,"on account of, because of"
+obliviscor,"oblivisci, oblitus sum (+ genitive)","I forget, I am forgetful of"
+occasio,"occasionis, f.",opportunity
+occido,"-ere, occidi, occisum","I kill, I strike down"
+occupo,"-are, occupavi, occupatum","I seize, I occupy, I attack"
+occurro,"-ere, occurri, occursum (+ dative)","I meet, I run up to"
+oculus,"oculi, m.",eye
+odi,odisse,I hate
+odium,"odii, n.",hatred
+offero,"offerre, obtuli, oblatum","I offer, I present"
+olim,,"once upon a time, once"
+omnis,omne,"all, every"
+onus,"oneris, n.","burden, load"
+oppidum,"oppidi, n.",town
+opprimo,"-ere, oppressi, oppressum","I overwhelm, I crush"
+oppugno,"-are, oppugnavi, oppugnatum",I attack
+opus,"operis, n.","work, piece of work"
+orno,"-are, ornavi, ornatum","I adorn, I decorate, I make attractive"
+oro,"-are, oravi, oratum","I beg, I pray"
+os,"oris, n.","mouth, face"
+ostendo,"-ere, ostendi, ostentum","I show, I display"
+otium,"otii, n.",leisure
+paene,,almost
+panis,"panis, m.",bread
+parco,"-ere, peperci, parsum (+ dative)",I spare
+parens,"parentis, m. or f.",parent
+pareo,"-ere, parui, paritum (+ dative)",I obey
+paro,"-are, paravi, paratum",I prepare
+pars,"partis, f.",part
+parvus,"parva, parvum",small
+pater,"patris, m.",father
+patior,"pati, passus sum","I suffer, I endure, I allow"
+patria,"patriae, f.",homeland
+pauci,"paucae, pauca","few, a few"
+paulisper,,for a short while
+pauper,pauperis,"poor, a poor person"
+pax,"pacis, f.",peace
+pecunia,"pecuniae, f.",money
+per,#NAME?,through
+pereo,"perire, perii, peritum","I perish, I am lost, I am destroyed"
+periculum,"periculi, n.",danger
+permitto,"-ere, permisi, permissum (+ dative)","I allow, I entrust"
+persuadeo,"-ere, persuasi, persuasum (+ dative)",I persuade
+perterritus,"perterrita, perterritum",terrified
+pervenio,"-ire, perveni, perventum",I arrive
+pes,"pedis, m.",foot
+peto,"-ere, petivi, petitum","I seek, I make for, I attack"
+placet,,it pleases
+plebs,"plebis, f.",common people
+plenus,"plena, plenum",full
+poena,"poenae, f.","punishment, penalty"
+poenas do,,I pay the penalty
+poeta,"poetae, m.",poet
+pono,"-ere, posui, positum","I place, I put"
+pons,"pontis, m.",bridge
+populus,"populi, m.",people
+porta,"portae, f.",gate
+porto,"-are, portavi, portatum",I carry
+portus,"portus, m.","port, harbour"
+posco,"-ere, poposci","I demand, I ask"
+possum,"posse, potui","I can, I am able"
+post,#NAME?,"after, behind"
+postea,,afterwards
+postquam,,"after, when"
+postridie,,on the next day
+potestas,"potestatis, f.",power
+praebeo,"-ere, praebui, praebitum","I offer, I supply, I show"
+praeda,"praedae, f.","plunder, booty, prey"
+praefectus,"praefecti, m.","prefect, commander, chief"
+praemium,"praemii, n.",reward
+praeter,#NAME?,"except, apart from"
+praeterea,,"moreover, furthermore"
+pretium,"pretii, n.",price
+primo,,"first, at first"
+primum,,"first, at first"
+princeps,"principis, m.","chief, leader"
+priusquam,,before
+pro,#NAME?,on behalf of
+procedo,"-ere, processi, processum","I proceed, I go forwards"
+procul,,"in the distance, far off"
+prodo,"-ere, prodidi, proditum",I betray
+proelium,"proelii, n.",battle
+proficiscor,"proficisci, profectus sum",I set out
+progredior,"progredi, progressus sum",I advance
+prohibeo,"-ere, prohibui, prohibitum","I prevent, I forbid"
+promitto,"-ere, promisi, promissum",I promise
+prope,,"nearly, almost"
+prope,#NAME?,near
+propter,#NAME?,"on account of, because of"
+proximus,"proxima, proximum","nearest, next"
+prudens,prudentis,"wise, sensible"
+publicus,"publica, publicum",public
+puella,"puellae, f.",girl
+puer,"pueri, m.",boy
+pugna,"pugnae, f.","battle, fight"
+pugno,"-are, pugnavi, pugnatum",I fight
+pulcher,"pulchra, pulchrum",beautiful
+punio,"-ire, punivi, punitum",I punish
+puto,"-are, putavi, putatum",I think
+quaero,"-ere, quaesivi, quaesitum","I search, I look for, I inquire"
+qualis,quale,of what sort?
+quam,,"than, as"
+quam,#NAME?,as ... as possible
+quamquam,,although
+quamvis,#NAME?,although
+quando?,,when?
+quantus,"quanta, quantum","how large, how great?"
+-que,,and
+qui,"quae, quod","who, which"
+quia,,because
+quidam,"quaedam, quoddam",a (certain)
+quidem,,indeed
+quis,quid,"who, what?"
+quisque,"quaeque, quidque",each
+quo?,,"where to?, whither?"
+quod,,because
+quomodo?,,how?
+quoniam,,"since, because"
+quoque,,also
+quot?,,how many?
+rapio,"-ere, rapui, raptum","I seize, I snatch"
+reddo,"-ere, reddidi, redditum","I return, I give back"
+redeo,"redire, redii, reditum","I return, I go back"
+refero,"referre, rettuli, relatum","I bring back, I return, I tell"
+regina,"reginae, f.",queen
+regnum,"regni, n.",kingdom
+rego,"-ere, rexi, rectum",I rule
+regredior,"regredi, regressus sum",I go back
+relinquo,"-ere, reliqui, relictum",I leave behind
+reliquus,"reliqua, reliquum","remaining, the rest of"
+res,"rei, f.","thing, matter (or appropriate noun)"
+res publica,"rei publicae, f.","state, republic"
+resisto,"-ere, restiti (+ dative)","I resist, I oppose"
+respondeo,"-ere, respondi, responsum",I reply
+responsum,"responsi, n.",answer
+rex,"regis, m.",king
+rideo,"-ere, risi, risum","I laugh, I smile"
+ripa,"ripae, f.",river bank
+rogo,"-are, rogavi, rogatum",I ask
+Roma,"Romae, f.",Rome
+Romanus,"Romana, Romanum",Roman
+Romanus,"Romani, m.",a Roman
+rus,"ruris, n.","country, countryside"
+sacer,"sacra, sacrum",holy
+saepe,,often
+saevus,"saeva, saevum","savage, fierce"
+sagitta,"sagittae, f.",arrow
+salus,"salutis, f.",safety
+saluto,"-are, salutavi, salutatum",I greet
+salve!,salvete!,hello!
+sanguis,"sanguinis, m.",blood
+sapiens,sapientis,wise
+sapientia,"sapientiae, f.",wisdom
+satis,,enough
+saxum,"saxi, n.",rock
+scelestus,"scelesta, scelestum",wicked
+scilicet,,"obviously, clearly"
+scio,"-ire, scivi, scitum",I know
+scribo,"-ere, scripsi, scriptum",I write
+se,,"himself, herself, itself, themselves"
+se recipio,,"I retreat, I withdraw"
+sed,,but
+sedeo,"-ere, sedi, sessum",I sit
+semper,,always
+senator,"senatoris, m.",senator
+senex,"senis, m.",old man
+sentio,"-ire, sensi, sensum","I feel, I notice"
+sequor,"sequi, secutus sum",I follow
+sermo,"sermonis, m.","conversation, discussion, speech"
+servo,"-are, servavi, servatum","I save, I keep"
+servus,"servi, m.",slave
+si,,if
+sic,,"so, thus"
+sicut,sicuti,"just, as, like"
+signum,"signi, n.","sign, signal, standard"
+silva,"silvae, f.",wood
+similis,simile,"like, similar"
+simul,,at the same time
+"simulac, simulatque",simulatque,as soon as
+simulo,"-are, simulavi, simulatum",I pretend
+sine,#NAME?,without
+sino,"-ere, sivi, situm",I allow
+socius,"socii, m.","ally, friend, companion"
+sol,"solis, m.",sun
+soleo,"-ere, solitus sum (semi-deponent)",I am accustomed
+solus,"sola, solum","alone, only"
+somnus,"somni, m.",sleep
+soror,"sororis, f.",sister
+spectaculum,"spectaculi, n.","spectacle, show"
+specto,"-are, spectavi, spectatum","I look at, I watch"
+spero,"-are, speravi, speratum","I hope, I expect"
+spes,"spei, f.",hope
+statim,,"at once, immediately"
+stilus,"stili, m.","stylus, pen"
+sto,"-are, steti, statum",I stand
+stola,"stolae, f.",dress
+studium,"studii, n.","enthusiasm, eagerness, study"
+stultus,"stulta, stultum",stupid
+sub,#ERROR!,"under, up to, just before"
+subito,,suddenly
+subitus,"subita, subitum",sudden
+sum,"esse, fui",I am
+summus,"summa, summum","highest, greatest"
+sumo,"-ere, sumpsi, sumptum","I take, I put on"
+super,#ERROR!,"above, upon, on top of"
+superbus,"superba, superbum",proud
+supero,"-are, superavi, superatum",I overpower
+surgo,"-ere, surrexi, surrectum","I lift, I raise up"
+suscipio,"-ere, suscepi, susceptum","I take up, I undertake"
+sustineo,"-ere, sustinui, sustentum","I support, I withstand"
+suus,"sua, suum","his, her, its, their"
+taberna,"tabernae, f.","inn, tavern, shop"
+taceo,"-ere, tacui, tacitum",I am silent
+talis,tale,"such, of such a kind"
+tam,,so
+tamen,,"however, yet"
+tandem,,"at last, finally"
+tango,"-ere, tetigi, tactum",I touch
+tantus,"tanta, tantum","so large, so great"
+tego,"-ere, texi, tectum",I cover
+telum,"teli, n.","weapon, missile"
+tempestas,"tempestatis, f.","storm, season, weather"
+templum,"templi, n.",temple
+tempus,"temporis, n.",time
+teneo,"-ere, tenui, tentum",I hold
+terra,"terrae, f.","earth, land"
+terreo,"-ere, terrui, territum","I frighten, I terrify"
+timeo,"-ere, timui","I fear, I am afraid"
+timor,"timoris, m.","fear, fright"
+toga,"togae, f.",toga
+tollo,"-ere, sustuli, sublatum","I lift, I raise"
+tot,,so many
+totus,"tota, totum","all, the whole of"
+trado,"-ere, tradidi, traditum",I hand over
+traho,"-ere, traxi, tractum","I pull, I drag"
+trans,#NAME?,across
+tristis,triste,"sad, mournful, gloomy"
+tu,,you (s.)
+tum,,then
+tunica,"tunicae, f.",tunic
+turba,"turbae, f.","crowd, disturbance"
+tutus,"tuta, tutum",safe
+tuus,"tua, tuum",your (s.)
+ubi,,when
+ubi?,,where?
+ubique,,everywhere
+ullus,"ulla, ullum",any
+umquam,,ever
+unde?,,"from where?, whence?"
+urbs,"urbis, f.",city
+ut,,"in order that, so that"
+uter,"utra, utrum",which (of two)
+utilis,utile,useful
+utor,"uti, usus sum (+ ablative)",I use
+utrum ... an,,whether ... or
+uxor,"uxoris, f.",wife
+valde,,very
+vale!,valete!,"goodbye!, farewell!"
+vallum,"valli, n.",rampart
+vehementer,,violently
+veho,"-ere, vexi, vectum","I carry, I convey"
+vendo,"-ere, vendidi, venditum",I sell
+venenum,"veneni, n.",poison
+venio,"-ire, veni, ventum",I come
+ventus,"venti, m.",wind
+verbum,"verbi, n.",word
+vereor,"vereri, veritus sum",I fear
+vero,,"in fact, indeed, truly"
+verto,"-ere, verti, versum",I turn
+verus,"vera, verum",true
+vester,"vestra, vestrum",your (pl.)
+vestimentum,"vestimenti, n.","garment, clothes"
+veto,"-are, vetui, vetitum","I forbid, I order ... not to"
+vetus,veteris,old
+via,"viae, f.","street, road"
+video,"-ere, vidi, visum",I see
+videor,"videri, visus sum",I seem
+villa,"villae, f.","house, farm, villa"
+vinco,"-ere, vici, victum","I conquer, I defeat, I win"
+vinum,"vini, n.",wine
+vir,"viri, m.","man, husband"
+virgo,"virginis, f.","girl, maiden"
+virtus,"virtutis, f.","manliness, courage, virtue"
+vis,"vis, f. (pl. vires)",force (pl. strength)
+vita,"vitae, f.",life
+vitupero,"-are, vituperavi, vituperatum","I curse, I blame"
+vivo,"-ere, vixi, victum",I live
+vivus,"viva, vivum","alive, living"
+vix,,"hardly, scarcely"
+voco,"-are, vocavi, vocatum",I call
+volo,"velle, volui","I want, I wish, I am willing"
+vos,,you (pl.)
+vox,"vocis, f.",voice
+vulnero,"-are, vulneravi, vulneratum",I wound
+vulnus,"vulneris, n.",wound
+vultus,"vultus, m.","face, expression"
