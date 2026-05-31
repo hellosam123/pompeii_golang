@@ -48,7 +48,7 @@ func main() {
 	pompeii.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
 
 	server := http.Server{
-		Addr:    ":5000",
+		Addr:    ":5030",
 		Handler: middleware.Logging(pompeii),
 	}
 
