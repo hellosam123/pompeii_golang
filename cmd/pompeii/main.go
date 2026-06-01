@@ -52,7 +52,7 @@ func main() {
 		Handler: middleware.Logging(pompeii),
 	}
 
-	log.Println("Server starting on http://localhost:5000/pompeii/")
+	log.Println("Server starting on http://localhost:5030/pompeii/")
 	log.Fatal(server.ListenAndServe())
 }
 
