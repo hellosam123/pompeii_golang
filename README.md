@@ -4,12 +4,9 @@ A Golang port of Pompeii. Pompeii is a Vocabulary tester web app created by G10 
 
 ## Information
 
-Hosted at http://sycs.student.isf.edu.hk/pompeii/ <br>
-
 ### Supported Vocab Lists
 
-<ul>
-  <li>Latin IGCSE</li>
-  <li>Latin GCSE DVL</li>
-</ul>
+- Latin IGCSE
+- Latin GCSE DVL
+  
 In the future, other vocab lists from different languages may be integrated.
