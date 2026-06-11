@@ -20,6 +20,16 @@ var (
 	store = sessions.NewCookieStore(key)
 )
 
+func init() {
+	store.Options = &sessions.Options{
+		Path:     "/",
+		MaxAge:   86400,
+		HttpOnly: true,
+		Secure:   false,
+		SameSite: http.SameSiteLaxMode,
+	}
+}
+
 func renderTemplate(w http.ResponseWriter, tmplName string, data any) {
 	w.Header().Set("Content-Type", "text/html")
 

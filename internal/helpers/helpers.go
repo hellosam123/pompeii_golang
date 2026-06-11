@@ -20,13 +20,13 @@ var readOnlyDB *sql.DB
 var dbInitError error
 
 func getDBPath() (string, error) {
-	exeDir, err := os.Executable()
+	exe, err := os.Executable()
 	if err != nil {
 		return "", fmt.Errorf("failed to get current file path")
 	}
 
-	exePath := filepath.Dir(exeDir)
-	dbPath := filepath.Join(exePath, "internal", "database", "database.db")
+	exeDir := filepath.Dir(exe)
+	dbPath := filepath.Join(exeDir, "internal", "database", "database.db")
 	dbPath = filepath.Clean(dbPath)
 
 	return dbPath, nil

@@ -6,8 +6,8 @@ import (
 	"log"
 	"mime"
 	"net/http"
+	"os"
 	"path/filepath"
-	"runtime"
 
 	"github.com/hellosam123/pompeii_golang/internal/handlers"
 	"github.com/hellosam123/pompeii_golang/internal/middleware"
@@ -44,9 +44,8 @@ func main() {
 	mux.HandleFunc("/game", handlers.NormalGameModeHandler)
 	mux.HandleFunc("/game_over", handlers.GameOverHandler)
 
-	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
-
 	pompeii.Handle("/pompeii/", http.StripPrefix("/pompeii", mux))
+	pompeii.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
 
 	server := http.Server{
 		Addr:    ":5030",
@@ -58,14 +57,13 @@ func main() {
 }
 
 func getStaticPath() (string, error) {
-	_, filename, _, ok := runtime.Caller(0)
-	if !ok {
+	exe, err := os.Executable()
+	if err != nil {
 		return "", fmt.Errorf("failed to get current file path")
 	}
 
-	mainDir := filepath.Dir(filename)
-	staticPath := filepath.Join(mainDir, "..", "..", "static")
-	staticPath = filepath.Clean(staticPath)
+	exeDir := filepath.Dir(exe)
+	staticPath := filepath.Join(exeDir, "static")
 
 	return staticPath, nil
 }

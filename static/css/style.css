@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-	background-image: url("/pompeii/static/images/Pompeii.jpg");
+	background-image: url("/static/images/Pompeii.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
