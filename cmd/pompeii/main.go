@@ -44,8 +44,9 @@ func main() {
 	mux.HandleFunc("/game", handlers.NormalGameModeHandler)
 	mux.HandleFunc("/game_over", handlers.GameOverHandler)
 
+	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
+
 	pompeii.Handle("/pompeii/", http.StripPrefix("/pompeii", mux))
-	pompeii.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
 
 	server := http.Server{
 		Addr:    ":5030",
