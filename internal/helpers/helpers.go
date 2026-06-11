@@ -3,9 +3,9 @@ package helpers
 import (
 	"database/sql"
 	"fmt"
+	"os"
 	"path/filepath"
 	"regexp"
-	"runtime"
 	"strings"
 	"sync"
 	"time"
@@ -20,13 +20,13 @@ var readOnlyDB *sql.DB
 var dbInitError error
 
 func getDBPath() (string, error) {
-	_, filename, _, ok := runtime.Caller(0)
-	if !ok {
+	exeDir, err := os.Executable()
+	if err != nil {
 		return "", fmt.Errorf("failed to get current file path")
 	}
 
-	helpersDir := filepath.Dir(filename)
-	dbPath := filepath.Join(helpersDir, "..", "database", "database.db")
+	exePath := filepath.Dir(exeDir)
+	dbPath := filepath.Join(exePath, "internal", "database", "database.db")
 	dbPath = filepath.Clean(dbPath)
 
 	return dbPath, nil

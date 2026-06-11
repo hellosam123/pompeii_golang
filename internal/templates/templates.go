@@ -3,18 +3,18 @@ package templates
 import (
 	"fmt"
 	"html/template"
+	"os"
 	"path/filepath"
-	"runtime"
 )
 
 func getTemplatesPath(templateName string) (string, error) {
-	_, filename, _, ok := runtime.Caller(0)
-	if !ok {
+	exe, err := os.Executable()
+	if err != nil {
 		return "", fmt.Errorf("failed to get current file path")
 	}
 
-	helpersDir := filepath.Dir(filename)
-	templatesPath := filepath.Join(helpersDir, "..", "..", "templates")
+	exeDir := filepath.Dir(exe)
+	templatesPath := filepath.Join(exeDir, "templates")
 	templatesPath = filepath.Clean(templatesPath)
 	templatesPath = filepath.Join(templatesPath, templateName)
 
