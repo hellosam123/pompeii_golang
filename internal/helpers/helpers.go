@@ -3,75 +3,16 @@ package helpers
 import (
 	"database/sql"
 	"fmt"
-	"os"
-	"path/filepath"
 	"regexp"
 	"strings"
-	"sync"
-	"time"
 
+	"github.com/hellosam123/pompeii_golang/internal/database"
 	"github.com/hellosam123/pompeii_golang/internal/models"
 
 	_ "modernc.org/sqlite"
 )
 
-var initOnce sync.Once
-var readOnlyDB *sql.DB
-var dbInitError error
-
-func getDBPath() (string, error) {
-	exe, err := os.Executable()
-	if err != nil {
-		return "", fmt.Errorf("failed to get current file path")
-	}
-
-	exeDir := filepath.Dir(exe)
-	dbPath := filepath.Join(exeDir, "internal", "database", "database.db")
-	dbPath = filepath.Clean(dbPath)
-
-	return dbPath, nil
-}
-
-func initReadOnlyDB() {
-	dbPath, err := getDBPath()
-
-	if err != nil {
-		dbInitError = fmt.Errorf("failed to get database path: %w", err)
-		return
-	}
-
-	// since DB doesn't change, cache=shared speeds up queries
-	readOnlyDBPath := fmt.Sprintf("file:%s?mode=ro&cache=shared&immutable=1", dbPath)
-
-	readOnlyDB, err = sql.Open("sqlite", readOnlyDBPath)
-
-	if err != nil {
-		dbInitError = fmt.Errorf("failed to open database: %w", err)
-		return
-	}
-
-	if err := readOnlyDB.Ping(); err != nil {
-		readOnlyDB.Close()
-		dbInitError = fmt.Errorf("failed to connect to database: %w", err)
-		return
-	}
-
-	readOnlyDB.SetMaxOpenConns(25)
-	readOnlyDB.SetMaxIdleConns(10)
-	readOnlyDB.SetConnMaxLifetime(5 * time.Minute)
-	readOnlyDB.SetConnMaxIdleTime(1 * time.Minute)
-}
-
-func getReadOnlyDB() (*sql.DB, error) {
-	initOnce.Do(initReadOnlyDB)
-	if dbInitError != nil {
-		return nil, dbInitError
-	}
-	return readOnlyDB, nil
-}
-
 func sqlRowsToVocabs(rows *sql.Rows) ([]models.Vocab, error) {
-
 	defer rows.Close()
 
 	var vocabs []models.Vocab
@@ -90,7 +31,7 @@ func sqlRowsToVocabs(rows *sql.Rows) ([]models.Vocab, error) {
 }
 
 func GetAllVocab() ([]models.Vocab, error) {
-	db, err := getReadOnlyDB()
+	db, err := database.GetDB()
 	if err != nil {
 		return nil, err
 	}
@@ -105,8 +46,8 @@ func GetAllVocab() ([]models.Vocab, error) {
         LEFT JOIN vocab_groups ON vocab.vocab_id = vocab_groups.vocab_id
         GROUP BY vocab.vocab_id, vocab.vocab_word
         ORDER BY vocab.vocab_word
-		`)
-
+		`,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute query: %w", err)
 	}
@@ -115,7 +56,7 @@ func GetAllVocab() ([]models.Vocab, error) {
 }
 
 func GetVocabByGroup(vocabGroup string) ([]models.Vocab, error) {
-	db, err := getReadOnlyDB()
+	db, err := database.GetDB()
 	if err != nil {
 		return nil, err
 	}
@@ -131,14 +72,13 @@ func GetVocabByGroup(vocabGroup string) ([]models.Vocab, error) {
         WHERE vocab_group = ?
         GROUP BY vocab.vocab_id, vocab.vocab_word
         ORDER BY vocab.vocab_word
-		`, vocabGroup)
-
+		`, vocabGroup,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute query: %w", err)
 	}
 
 	vocabs, err := sqlRowsToVocabs(rows)
-
 	if err != nil {
 		return nil, err
 	}
@@ -151,7 +91,7 @@ func GetVocabByGroup(vocabGroup string) ([]models.Vocab, error) {
 }
 
 func GetVocabByID(vocabID int) (*models.Vocab, error) {
-	db, err := getReadOnlyDB()
+	db, err := database.GetDB()
 	if err != nil {
 		return nil, err
 	}
@@ -167,14 +107,13 @@ func GetVocabByID(vocabID int) (*models.Vocab, error) {
         WHERE vocab.vocab_id = ?
         GROUP BY vocab.vocab_id, vocab.vocab_word
         ORDER BY vocab.vocab_word
-		`, vocabID)
-
+		`, vocabID,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute query: %w", err)
 	}
 
 	vocabs, err := sqlRowsToVocabs(rows)
-
 	if err != nil {
 		return nil, err
 	}
@@ -187,7 +126,7 @@ func GetVocabByID(vocabID int) (*models.Vocab, error) {
 }
 
 func GetVocabByIDAllTranslations(vocabID int) (*models.Vocab, error) {
-	db, err := getReadOnlyDB()
+	db, err := database.GetDB()
 	if err != nil {
 		return nil, err
 	}
@@ -203,14 +142,13 @@ func GetVocabByIDAllTranslations(vocabID int) (*models.Vocab, error) {
         WHERE vocab.vocab_id = ?
         GROUP BY vocab.vocab_id, vocab.vocab_word
         ORDER BY vocab.vocab_word
-		`, vocabID)
-
+		`, vocabID,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute query: %w", err)
 	}
 
 	vocabs, err := sqlRowsToVocabs(rows)
-
 	if err != nil {
 		return nil, err
 	}
@@ -223,7 +161,7 @@ func GetVocabByIDAllTranslations(vocabID int) (*models.Vocab, error) {
 }
 
 func GetRandomVocabByGroup(vocabGroup string) (*models.Vocab, error) {
-	db, err := getReadOnlyDB()
+	db, err := database.GetDB()
 	if err != nil {
 		return nil, err
 	}
@@ -240,14 +178,13 @@ func GetRandomVocabByGroup(vocabGroup string) (*models.Vocab, error) {
         GROUP BY vocab.vocab_id, vocab.vocab_word
         ORDER BY RANDOM()
         LIMIT 1
-		`, vocabGroup)
-
+		`, vocabGroup,
+	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute query: %w", err)
 	}
 
 	vocabs, err := sqlRowsToVocabs(rows)
-
 	if err != nil {
 		return nil, err
 	}

@@ -5,3 +5,6 @@ poetry.lock
 /.vscode
 
 .DS_Store
+
+/bin
+/pkg

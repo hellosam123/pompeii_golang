@@ -1,29 +1,31 @@
 package main
 
 import (
+	"embed"
 	"encoding/gob"
-	"fmt"
+	"io/fs"
 	"log"
 	"mime"
 	"net/http"
-	"os"
-	"path/filepath"
 
 	"github.com/hellosam123/pompeii_golang/internal/handlers"
 	"github.com/hellosam123/pompeii_golang/internal/middleware"
 	"github.com/hellosam123/pompeii_golang/internal/models"
 )
 
+//go:embed static
+var staticFiles embed.FS
+
 func main() {
+	staticFS, err := fs.Sub(staticFiles, "static")
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	gob.Register([]models.AnsweredVocabID{})
 
 	mime.AddExtensionType(".css", "text/css")
 	mime.AddExtensionType(".js", "application/javascript")
-
-	staticPath, err := getStaticPath()
-	if err != nil {
-		log.Fatal(err)
-	}
 
 	pompeii := http.NewServeMux()
 
@@ -44,7 +46,7 @@ func main() {
 	mux.HandleFunc("/game", handlers.NormalGameModeHandler)
 	mux.HandleFunc("/game_over", handlers.GameOverHandler)
 
-	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticPath))))
+	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.FS(staticFS))))
 
 	pompeii.Handle("/pompeii/", http.StripPrefix("/pompeii", mux))
 
@@ -55,16 +57,4 @@ func main() {
 
 	log.Println("Server starting on http://localhost:5030/pompeii/")
 	log.Fatal(server.ListenAndServe())
-}
-
-func getStaticPath() (string, error) {
-	exe, err := os.Executable()
-	if err != nil {
-		return "", fmt.Errorf("failed to get current file path")
-	}
-
-	exeDir := filepath.Dir(exe)
-	staticPath := filepath.Join(exeDir, "static")
-
-	return staticPath, nil
 }

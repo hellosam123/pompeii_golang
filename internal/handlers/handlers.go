@@ -12,7 +12,7 @@ import (
 
 	"github.com/hellosam123/pompeii_golang/internal/helpers"
 	"github.com/hellosam123/pompeii_golang/internal/models"
-	"github.com/hellosam123/pompeii_golang/internal/templates"
+	"github.com/hellosam123/pompeii_golang/templates"
 )
 
 var (
@@ -30,28 +30,13 @@ func init() {
 	}
 }
 
-func renderTemplate(w http.ResponseWriter, tmplName string, data any) {
-	w.Header().Set("Content-Type", "text/html")
-
-	tmpl, err := templates.GetTemplates(tmplName)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-	err = tmpl.ExecuteTemplate(w, "base.html", data)
-	if err != nil {
-		log.Printf("template error: %v", err)
-		return
-	}
-}
-
 func respondJSON(w http.ResponseWriter, data any) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
 }
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "index.html", nil)
+	templates.RenderTemplate(w, "index.html", nil)
 }
 
 func VocabularyHandler(w http.ResponseWriter, r *http.Request) {
@@ -60,11 +45,11 @@ func VocabularyHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	renderTemplate(w, "vocabulary.html", allVocab)
+	templates.RenderTemplate(w, "vocabulary.html", allVocab)
 }
 
 func GameSettingsHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "game_settings.html", nil)
+	templates.RenderTemplate(w, "game_settings.html", nil)
 }
 
 func LoadGameHandler(w http.ResponseWriter, r *http.Request) {
@@ -152,7 +137,7 @@ func ClassicGameModeHandler(w http.ResponseWriter, r *http.Request) {
 	gameSession, _ := store.Get(r, "game-session")
 
 	if gameSession.Values["vocabIDStack"] != nil {
-		renderTemplate(w, "classic.html", nil)
+		templates.RenderTemplate(w, "classic.html", nil)
 	} else {
 		http.Redirect(w, r, "/pompeii/", http.StatusFound)
 	}
@@ -167,7 +152,7 @@ func NormalGameModeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if difficultyMode != "" {
-		renderTemplate(w, "game.html", map[string]string{"DifficultyMode": difficultyMode})
+		templates.RenderTemplate(w, "game.html", map[string]string{"DifficultyMode": difficultyMode})
 	} else {
 		http.Redirect(w, r, "/pompeii/", http.StatusFound)
 	}
@@ -236,7 +221,7 @@ func GameOverHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	renderTemplate(w, "game_over.html", gameOverData)
+	templates.RenderTemplate(w, "game_over.html", gameOverData)
 }
 
 func GetVocabHandler(w http.ResponseWriter, r *http.Request) {
