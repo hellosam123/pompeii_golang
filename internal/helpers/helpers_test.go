@@ -16,6 +16,15 @@ func TestGetAllVocab(t *testing.T) {
 func TestGetVocabByGroup(t *testing.T) {
 	vocabs, err := GetVocabByGroup("Latin IGCSE")
 	if err != nil {
+		t.Fatalf("GetVocabByGroup failed: %v", err)
+	}
+
+	t.Log(vocabs)
+}
+
+func TestGetVocabByGroups(t *testing.T) {
+	vocabs, err := GetVocabByGroups([]string{"Latin IGCSE", "Spanish Ab Initio - Ropa"})
+	if err != nil {
 		t.Fatalf("GetVocabByGroups failed: %v", err)
 	}
 

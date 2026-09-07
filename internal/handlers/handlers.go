@@ -55,16 +55,16 @@ func GameSettingsHandler(w http.ResponseWriter, r *http.Request) {
 func LoadGameHandler(w http.ResponseWriter, r *http.Request) {
 	gameSession, _ := store.Get(r, "game-session")
 
-	var vocabGroup string
+	var vocabGroups []string
 	var classicMode bool
 	if r.Method == http.MethodPost {
-		vocabGroup = r.FormValue("vocab-list")
 		classicMode = r.FormValue("classic-mode") == "true"
+		vocabGroups = r.Form["vocab-list"]
 	} else {
 		classicMode = true
 	}
 
-	gameSession.Values["vocabGroup"] = vocabGroup
+	gameSession.Values["vocabGroups"] = vocabGroups
 	gameSession.Values["classicMode"] = classicMode
 	gameSession.Values["answeredVocabSlice"] = []models.AnsweredVocabID{}
 
@@ -76,7 +76,7 @@ func LoadGameHandler(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 
-			vocabList, err := helpers.GetVocabByGroup(vocabGroup)
+			vocabList, err := helpers.GetVocabByGroups(vocabGroups)
 			if err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
 				return
@@ -259,13 +259,13 @@ func GetVocabHandler(w http.ResponseWriter, r *http.Request) {
 
 func GetRandomVocabHandler(w http.ResponseWriter, r *http.Request) {
 	gameSession, _ := store.Get(r, "game-session")
-	vocabGroup, ok := gameSession.Values["vocabGroup"].(string)
+	vocabGroups, ok := gameSession.Values["vocabGroups"].([]string)
 	if !ok {
 		log.Printf("failed to get vocabGroup value from gameSession")
 		return
 	}
 
-	vocab, err := helpers.GetRandomVocabByGroup(vocabGroup)
+	vocab, err := helpers.GetRandomVocabByGroups(vocabGroups)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return

@@ -1,40 +1,102 @@
 tip {
-	border-bottom: 1px dotted black;
-	cursor: pointer;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.form-label {
+  display: inline-block;
+  width: 150px;
+  color: white;
+  font-family: "Cinzel", serif;
 }
 
 #game-settings-container {
-	width: 80%;
-	max-width: 800px;
-	background: rgba(0, 0, 0, 0.7);
-	padding: 20px;
-	border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-#game-settings-container form > div {
-	margin-bottom: 15px;
-}
-
-#game-settings-container label {
-	display: inline-block;
-	width: 150px;
-	color: white;
-	font-family: "Cinzel", serif;
+#game-settings-container form>div {
+  margin-bottom: 15px;
 }
 
 #game-settings-container select,
 #game-settings-container input[type="number"] {
-	padding: 8px;
-	width: 200px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#game-settings-container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
 }
 
 #game-settings-container input[type="checkbox"] {
-	width: 18px;
-	height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 #game-settings-container button {
-	margin-top: 10px;
+  margin-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 8px 36px 8px 8px;
+  width: 200px;
+  height: 32.8px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.dropdown-content {
+  color: black;
+  font-size: 13px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content label {
+  display: block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content label:hover {
+  background-color: Highlight;
+}
+
+.dropdown-content input {
+  flex-shrink: 0;
 }

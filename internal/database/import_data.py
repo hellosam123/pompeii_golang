@@ -26,8 +26,12 @@ def import_data(csv_file, vocab_group):
 
         all_english_translation_list = []
         for word in stripped_shown_english_translation_list:  # absolute hell on earth
-            reverse_lemmatized_word_list = reverse_lemmatize.reverse_lemmatize(word)
-            all_english_translation_list.extend(reverse_lemmatized_word_list)
+            to_rl_word_list = [word]
+            if "it is" in word:
+                to_rl_word_list.append(word.replace("it is", "it's"))
+            for w in to_rl_word_list:
+                reverse_lemmatized_word_list = reverse_lemmatize.reverse_lemmatize(w)
+                all_english_translation_list.extend(reverse_lemmatized_word_list)
 
         helpers.new_vocab(
             vocab_word.strip(),
@@ -48,3 +52,11 @@ def import_data(csv_file, vocab_group):
 import_data("assets/vocab_list_igcse_full.csv", "Latin IGCSE")
 import_data("assets/vocab_list_gcse_dvl.csv", "Latin GCSE DVL")
 import_data("assets/vocab_list_spanish_ab_initio_ropa.csv", "Spanish Ab Initio - Ropa")
+import_data(
+    "assets/vocab_list_spanish_ab_initio_atributos_personales.csv",
+    "Spanish Ab Initio - Atributos Personales",
+)
+import_data(
+    "assets/vocab_list_spanish_ab_initio_vocabulary_foto.csv",
+    "Spanish Ab Initio - Vocabulary Foto",
+)

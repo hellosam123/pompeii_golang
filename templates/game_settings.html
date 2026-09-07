@@ -11,18 +11,25 @@
 
 <div class="flexbox-grid">
   <div id="game-settings-container">
-    <form action="/pompeii/load_game" method="POST">
-      <div>
-        <label for="vocab-list-form">Vocab List:</label>
-        <select id="vocab-list-form" name="vocab-list">
-          <label><option value="Latin IGCSE">Latin IGCSE</option></label>
-          <label><option value="Latin GCSE DVL">Latin GCSE DVL</option></label>
-          <label><option value="Spanish Ab Initio - Ropa">Spanish Ab Initio - Ropa</option></label>
-        </select>
+    <form id="game-settings-form" action="/pompeii/load_game" method="POST">
+      <div class="dropdown">
+        <label class="form-label" for="vocab-list-form">Vocab List:</label>
+        <button type="button" id="vocab-list-form" class="dropdown-button" onclick="toggleDropdown()">Select Vocab
+          List:</button>
+        <div id="dropdownContent" class="dropdown-content">
+          <label><input type="checkbox" name="vocab-list" value="Latin IGCSE">Latin IGCSE</input></label>
+          <label><input type="checkbox" name="vocab-list" value="Latin GCSE DVL">Latin GCSE DVL</input></label>
+          <label><input type="checkbox" name="vocab-list" value="Spanish Ab Initio - Ropa">Spanish AI -
+            Ropa</input></label>
+          <label><input type="checkbox" name="vocab-list" value="Spanish Ab Initio - Atributos Personales">Spanish AI -
+            Atributos Personales</input></label>
+          <label><input type="checkbox" name="vocab-list" value="Spanish Ab Initio - Vocabulary Foto">Spanish AI -
+            Vocabulary Foto</input></label>
+        </div>
       </div>
 
       <div>
-        <label for="difficulty-mode-form">Difficulty:</label>
+        <label class="form-label" for="difficulty-mode-form">Difficulty:</label>
         <select id="difficulty-mode-form" name="difficulty-mode">
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
@@ -31,7 +38,7 @@
       </div>
 
       <div>
-        <label for="classic-mode-form">
+        <label class="form-label" for="classic-mode-form">
           <tip title="Classic mode is the basic vocabulary tester mode">Classic Mode:</tip>
         </label>
 
@@ -39,7 +46,7 @@
       </div>
 
       <div>
-        <label for="num-questions-form">Number of Questions:</label>
+        <label class="form-label" for="num-questions-form">Number of Questions:</label>
         <input type="number" id="num-questions-form" name="num-questions" value="10" min="1" required />
       </div>
 
@@ -63,6 +70,18 @@
     difficultyModeForm.disabled = classicModeForm.checked;
     numQuestionsForm.disabled = !classicModeForm.checked;
   });
+
+  document.getElementById("game-settings-form").addEventListener("submit", function (event) {
+    if (document.querySelectorAll("input[name='vocab-list']:checked").length == 0) {
+      alert("Place check at least one vocab list before submitting.");
+      event.preventDefault();
+    }
+  }); 
+</script>
+
+<script type="module">
+  import {toggleDropdown} from "/pompeii/static/js/dropdown_checkbox.js";
+  window.toggleDropdown = toggleDropdown;
 </script>
 
 {{end}}

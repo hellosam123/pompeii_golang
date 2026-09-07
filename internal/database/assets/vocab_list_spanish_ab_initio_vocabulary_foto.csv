@@ -1,0 +1,58 @@
+vocab_word,info,english_translation
+en la foto veo,Personas y Descripción Física,in the photo there is
+en la foto hay,Personas y Descripción Física,in the photo there is
+un hombre,Personas y Descripción Física,a man
+la mujer,Personas y Descripción Física,a woman
+un chico,Personas y Descripción Física,a boy
+una chica,Personas y Descripción Física,a girl
+unos niños,Personas y Descripción Física,some children
+una familia,Personas y Descripción Física,a family
+un grupo de personas,Personas y Descripción Física,a group of people
+joven,Personas y Descripción Física,young
+mayor / viejo/a,Personas y Descripción Física,older
+el tiene,Personas y Descripción Física,he has
+el pelo corto,Personas y Descripción Física,short hair
+el pelo largo,Personas y Descripción Física,long hair
+una barba,Personas y Descripción Física,a beard
+trabajando,Acciones (Estar + Gerundio),working
+jugando,Acciones (Estar + Gerundio),playing
+comiendo,Acciones (Estar + Gerundio),eating
+bebiendo,Acciones (Estar + Gerundio),drinking
+hablando,Acciones (Estar + Gerundio),talking
+sonriendo,Acciones (Estar + Gerundio),smiling
+estudiando,Acciones (Estar + Gerundio),studying
+leyendo,Acciones (Estar + Gerundio),reading
+cocinando,Acciones (Estar + Gerundio),cooking
+preparando,Acciones (Estar + Gerundio),preparing
+tocando la guitarra,Acciones (Estar + Gerundio),playing the guitar
+En el centro,Lugar y Posición,in the center
+al fondo,Lugar y Posición,at the back
+izquierda,Lugar y Posición,left
+derecha,Lugar y Posición,right
+Enfrente de,Lugar y Posición,in front of
+Detrás de,Lugar y Posición,behind
+Al lado de,Lugar y Posición,next to
+Cerca de,Lugar y Posición,near / near to
+oficina,Lugar y Posición,office
+escuela,Lugar y Posición,school
+cocina,Lugar y Posición,kitchen
+salón,Lugar y Posición,living room
+un parque,Lugar y Posición,a park
+la calle,Lugar y Posición,the street
+parecen contentos,Ánimo y Ambiente,they seem happy
+triste,Ánimo y Ambiente,sad
+cansado/a,Ánimo y Ambiente,tired
+tranquilo/a,Ánimo y Ambiente,calm
+ocupado/a,Ánimo y Ambiente,busy
+hace sol,Ánimo y Ambiente,it is sunny
+hace calor,Ánimo y Ambiente,it is hot
+hace frío,Ánimo y Ambiente,it is cold
+hace llueve,Ánimo y Ambiente,it is raining
+es de día,Ánimo y Ambiente,it is day / it is daytime
+es de noche,Ánimo y Ambiente,it is night / it is nighttime
+pienso que... / creo que...,Frases Clave (Criterio B),I think that
+me parece que...,Frases Clave (Criterio B),it seems to me that / it appears that / it appears to me that / it seems that
+diría que...,Frases Clave (Criterio B),I would say that
+desde mi punto de vista...,Frases Clave (Criterio B),from my point of view / from my perspective
+en mi opinión,Frases Clave (Criterio B),in my opinion
+creo que se relaciona con...,Frases Clave (Criterio B),I think it relates to / I believe it relates to / I think it has to do with / I believe it has to do with
