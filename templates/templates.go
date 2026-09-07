@@ -10,23 +10,10 @@ import (
 //go:embed *.html
 var templateFS embed.FS
 
-var (
-	templates *template.Template
-	baseTmpl  *template.Template
-)
+var baseTmpl *template.Template
 
 func init() {
-	var err error
-	templates, err = template.ParseFS(templateFS, "*.html")
 	baseTmpl = template.Must(template.ParseFS(templateFS, "base.html"))
-
-	for _, t := range templates.Templates() {
-		log.Println(t.Name())
-	}
-
-	if err != nil {
-		log.Printf("template error: %v", err)
-	}
 }
 
 func RenderTemplate(w http.ResponseWriter, tmplName string, data any) {

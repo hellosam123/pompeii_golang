@@ -90,6 +90,51 @@ func GetVocabByGroup(vocabGroup string) ([]models.Vocab, error) {
 	return vocabs, nil
 }
 
+func GetVocabByGroups(vocabGroups []string) ([]models.Vocab, error) {
+	db, err := database.GetDB()
+	if err != nil {
+		return nil, err
+	}
+
+	placeholders := make([]string, len(vocabGroups))
+	args := make([]any, len(vocabGroups))
+
+	for i, vg := range vocabGroups {
+		placeholders[i] = "?"
+		args[i] = vg
+	}
+
+	query := fmt.Sprintf(
+		`
+        SELECT vocab.vocab_id, vocab.vocab_word,
+        GROUP_CONCAT(DISTINCT english_translation) AS english_translation,
+        GROUP_CONCAT(DISTINCT vocab_group) AS vocab_group
+        FROM vocab
+        LEFT JOIN shown_translations ON vocab.vocab_id = shown_translations.vocab_id
+        LEFT JOIN vocab_groups ON vocab.vocab_id = vocab_groups.vocab_id
+        WHERE vocab_group in (%s)
+        GROUP BY vocab.vocab_id, vocab.vocab_word
+        ORDER BY vocab.vocab_word
+		`, strings.Join(placeholders, ","),
+	)
+
+	rows, err := db.Query(query, args...)
+	if err != nil {
+		return nil, fmt.Errorf("failed to execute query: %w", err)
+	}
+
+	vocabs, err := sqlRowsToVocabs(rows)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(vocabs) == 0 {
+		return nil, fmt.Errorf("no vocab found for groups: %s", vocabGroups)
+	}
+
+	return vocabs, nil
+}
+
 func GetVocabByID(vocabID int) (*models.Vocab, error) {
 	db, err := database.GetDB()
 	if err != nil {
@@ -191,6 +236,52 @@ func GetRandomVocabByGroup(vocabGroup string) (*models.Vocab, error) {
 
 	if len(vocabs) == 0 {
 		return nil, fmt.Errorf("no vocab found for group: %s", vocabGroup)
+	}
+
+	return &vocabs[0], nil
+}
+
+func GetRandomVocabByGroups(vocabGroups []string) (*models.Vocab, error) {
+	db, err := database.GetDB()
+	if err != nil {
+		return nil, err
+	}
+
+	placeholders := make([]string, len(vocabGroups))
+	args := make([]any, len(vocabGroups))
+
+	for i, vg := range vocabGroups {
+		placeholders[i] = "?"
+		args[i] = vg
+	}
+
+	query := fmt.Sprintf(
+		`
+        SELECT vocab.vocab_id, vocab.vocab_word,
+        GROUP_CONCAT(DISTINCT english_translation) AS english_translation,
+        GROUP_CONCAT(DISTINCT vocab_group) AS vocab_group
+        FROM vocab
+        LEFT JOIN shown_translations ON vocab.vocab_id = shown_translations.vocab_id
+        LEFT JOIN vocab_groups ON vocab.vocab_id = vocab_groups.vocab_id
+        WHERE vocab_group in (%s)
+        GROUP BY vocab.vocab_id, vocab.vocab_word
+        ORDER BY RANDOM()
+        LIMIT 1
+		`, strings.Join(placeholders, ","),
+	)
+
+	rows, err := db.Query(query, args...)
+	if err != nil {
+		return nil, fmt.Errorf("failed to execute query: %w", err)
+	}
+
+	vocabs, err := sqlRowsToVocabs(rows)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(vocabs) == 0 {
+		return nil, fmt.Errorf("no vocab found for groups: %s", vocabGroups)
 	}
 
 	return &vocabs[0], nil
