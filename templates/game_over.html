@@ -53,9 +53,10 @@
   const retryIncorrectButtonElement = document.getElementById("retry-incorrect-div");
   const retryIncorrectDiv = document.getElementById("retry-incorrect-info");
   const retryIncorrect = retryIncorrectDiv.dataset.retry_incorrect;
-  if (retryIncorrect == "False") {
+  if (retryIncorrect == "false") {
     retryIncorrectButtonElement.classList.toggle("invisible");
   }
+  console.log(retryIncorrect)
 </script>
 
 {{end}}

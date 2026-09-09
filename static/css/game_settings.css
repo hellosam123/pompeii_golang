@@ -80,6 +80,7 @@ tip {
   width: 200px;
   right: 0;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .dropdown-content.show {
