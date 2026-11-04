@@ -39,17 +39,17 @@ def new_vocab(
     conn = get_db_connection()
 
     # 💻  EDIT THIS ↓ EXECUTE STATEMENT TO MATCH YOUR DATABASE
-    vocab_id = get_vocab_id_from_vocab_word(
-        vocab_word
-    )  # makes sure latin_vocab isn't duplicated
-    if not vocab_id:
-        vocab_id = conn.execute(
-            """
-            INSERT INTO
-            vocab (vocab_word)
-            VALUES (?)""",
-            (vocab_word,),
-        ).lastrowid
+    # vocab_id = get_vocab_id_from_vocab_word(
+    #     vocab_word
+    # )  # makes sure latin_vocab isn't duplicated
+    # if not vocab_id:
+    vocab_id = conn.execute(
+        """
+        INSERT INTO
+        vocab (vocab_word)
+        VALUES (?)""",
+        (vocab_word,),
+    ).lastrowid
 
     if shown_translations:
         for shown_translation in shown_translations:

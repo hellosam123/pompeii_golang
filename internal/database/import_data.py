@@ -17,6 +17,7 @@ def import_data(csv_file, vocab_group):
         shown_english_translation = vocab_dict["english_translation"]
 
         if isinstance(shown_english_translation, float):
+            print(csv_file)
             print(vocab_dict)
             print(shown_english_translation)
             exit()
@@ -71,4 +72,11 @@ import_data(
 )
 import_data(
     "assets/vocab_list_spanish_ab_initio_casa_full.csv", "Spanish Ab Initio - Casa Full"
+)
+import_data(
+    "assets/vocab_list_spanish_ab_initio_food_importante.csv",
+    "Spanish Ab Initio - Food Importante",
+)
+import_data(
+    "assets/vocab_list_spanish_ab_initio_food_full.csv", "Spanish Ab Initio - Food Full"
 )
