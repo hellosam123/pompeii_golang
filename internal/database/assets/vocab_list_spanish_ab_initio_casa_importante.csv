@@ -1,0 +1,112 @@
+vocab_word,info,english_translation
+La casa,La casa,The house
+La vivienda,La casa,The dwelling
+"El edificio, el inmueble",La casa,The building
+El apartamento (Latam: departamento),La casa,The flat
+El piso,La casa,"The apartment, the floor"
+La casa,La casa,The house
+La villa,La casa,The villa
+Las habitaciones,La casa,The rooms
+"El dormitorio, el cuarto",La casa,The bedroom
+"La sala de estudio, el estudio",La casa,The study room
+El comedor,La casa,The dining room
+"El salón, la sala de estar, la salita",La casa,The living room
+La cocina,La casa,The kitchen
+"El baño, el cuarto de baño",La casa,The bathroom
+"El aseo, los servicios",La casa,The toilet
+"El recibidor, la entrada",La casa,The hall
+El pasillo,La casa,The corridor / the hallway
+"El ático, la buhardilla, el desván",La casa,The attic
+El sótano,La casa,The basement
+La puerta,La casa,The door
+El portal,La casa,The gate / the main door
+La ventana,La casa,The window
+El muro,La casa,The wall
+Las escaleras,La casa,The stairs
+El ascensor,La casa,The lift
+El balcón,La casa,The balcony
+La terraza,La casa,The terrace
+El patio,La casa,The patio
+El garaje,Elementos externos,The garage
+El jardín,Elementos externos,The garden
+La piscina,Elementos externos,The pool
+Los muebles,El mobiliario,The furniture
+La cama,El mobiliario,The bed
+La mesa,El mobiliario,The table
+El escritorio,El mobiliario,The desk
+La silla,El mobiliario,The chair
+"El sillón, la butaca",El mobiliario,The armchair
+El sofá,El mobiliario,The couch
+Un estante,El mobiliario,A shelf
+La librería,El mobiliario,The bookshelf
+"El frigorífico, el refrigerador, la nevera",Los electrodomésticos,The fridge
+La lavadora,Los electrodomésticos,The washing machine
+El televisor,Los electrodomésticos,The television (TV)
+La televisión (la tele),Los electrodomésticos,The television (TV)
+La estufa,Los electrodomésticos,The stove
+El ventilador,Los electrodomésticos,The fan
+El aire acondicionado,Los electrodomésticos,The air con
+La manta,La decoración y objetos de la casa,The blanket
+El vaso,Los utensilios para comer,The glass
+La copa,Los utensilios para comer,The wine glass
+La taza,Los utensilios para comer,The cup
+La cuchara,Los utensilios para comer,The spoon
+El tenedor,Los utensilios para comer,The fork
+El cuchillo,Los utensilios para comer,The knife
+La sartén,Los utensilios para cocinar,The frying pan
+Las tareas domésticas,Las tareas domésticas,Household chores
+Hago la cama,Las tareas domésticas,I make the bed
+Hago la compra,Las tareas domésticas,I do the grocery shopping / I do the shopping
+Cocino,Las tareas domésticas,I cook
+En,Las preposiciones de lugar,In
+Dentro de,Las preposiciones de lugar,Insde
+"Fuera de, afuera de",Las preposiciones de lugar,Outside
+Delante de,Las preposiciones de lugar,In front of
+Enfrente de,Las preposiciones de lugar,Facing
+Detrás de,Las preposiciones de lugar,Behind
+Sobre,Las preposiciones de lugar,On
+Encima de,Las preposiciones de lugar,On top
+Debajo de / bajo,Las preposiciones de lugar,Under / underneath
+Entre,Las preposiciones de lugar,Between
+Cerca de,Las preposiciones de lugar,Close to
+Lejos de,Las preposiciones de lugar,Far from
+Al lado de,Las preposiciones de lugar,Next to
+Junto a,Las preposiciones de lugar,Beside
+A la derecha de,Las preposiciones de lugar,To the right
+A la izquierda de,Las preposiciones de lugar,To the left
+Despertarse,Verbos útiles,To wake up
+Acostarse,Verbos útiles,To go to bed
+"Dormir, dormirse*",Verbos útiles,"To sleep, to fall asleep"
+Lavarse,Verbos útiles,To wash (oneself)
+Prepararse,Verbos útiles,To get ready
+Desayunar,Verbos útiles,To have breakfast
+Almorzar,Verbos útiles,To have lunch
+Merendar,Verbos útiles,To have an afternoon snack
+Cenar,Verbos útiles,To have dinner
+Tomar,Verbos útiles,To have
+"Comer, comerse",Verbos útiles,To eat
+"Beber, beberse",Verbos útiles,To drink
+Salir,Verbos útiles,To go out
+Ir,Verbos útiles,To go
+Irse*,Verbos útiles,To go away
+Llegar*,Verbos útiles,To arrive
+Venir*,Verbos útiles,To come
+Volver*,Verbos útiles,To come back / To return
+Poner*,Verbos útiles,To put
+Ponerse*,Verbos útiles,To put on
+Quitarse,Verbos útiles,To take off (clothes)
+Vestirse*,Verbos útiles,To get dressed
+Desvestirse*,Verbos útiles,To undress
+Desnudarse,Verbos útiles,To get naked
+Hacer,Verbos útiles,To do / to make
+Comprar,Verbos útiles,To buy
+Lavar,Verbos útiles,To wash
+Ordenar,Verbos útiles,To tidy up
+Arreglar,Verbos útiles,"To fix, to tidy up"
+Preparar,Verbos útiles,To prepare
+"Cocinar, Guisar",Verbos útiles,To cook
+Empezar,Verbos útiles,To start
+Comenzar,Verbos útiles,To begin
+Terminar,Verbos útiles,To finish
+Acabar,Verbos útiles,To end
+Servir,Verbos útiles,To serve

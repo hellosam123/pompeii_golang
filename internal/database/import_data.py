@@ -16,6 +16,11 @@ def import_data(csv_file, vocab_group):
         vocab_word = vocab_dict["vocab_word"]
         shown_english_translation = vocab_dict["english_translation"]
 
+        if isinstance(shown_english_translation, float):
+            print(vocab_dict)
+            print(shown_english_translation)
+            exit()
+
         shown_english_translation_list = re.split(
             r"[,/](?![^(]*\))", shown_english_translation
         )
@@ -59,4 +64,11 @@ import_data(
 import_data(
     "assets/vocab_list_spanish_ab_initio_vocabulary_foto.csv",
     "Spanish Ab Initio - Vocabulary Foto",
+)
+import_data(
+    "assets/vocab_list_spanish_ab_initio_casa_importante.csv",
+    "Spanish Ab Initio - Casa Importante",
+)
+import_data(
+    "assets/vocab_list_spanish_ab_initio_casa_full.csv", "Spanish Ab Initio - Casa Full"
 )
